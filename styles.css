@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  
+}
+.image{
+  display: flex;
+  width: 50%;
+}
+
+.left-side{
+
+}
+
+.right-side{
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  
+  
+}
+
+.top-header{
+  border-style: solid;
+  height: 40%;
+}
+
+.middle-form{
+  border-style: solid;
+  height: 20%; 
+}
+
+.footer{
+  border-style: solid;
+  height: 40%;
+}

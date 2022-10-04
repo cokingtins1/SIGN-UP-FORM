@@ -1,38 +1,13 @@
-.container {
-  display: flex;
+.body {
+  font-family: 'Raleway', sans-serif;
   width: 100vw;
   height: 100vh;
-  flex-direction: row;
-  
-}
-.image{
+  overflow: hidden;
   display: flex;
-  width: 50%;
+  flex-direction: row;
+  background-color: red;
 }
 
-.left-side{
-
-}
-
-.right-side{
-  display:flex;
-  flex-direction: column;
-  height: 100vh;
-  
-  
-}
-
-.top-header{
-  border-style: solid;
-  height: 40%;
-}
-
-.middle-form{
-  border-style: solid;
-  height: 20%; 
-}
-
-.footer{
-  border-style: solid;
-  height: 40%;
+.div {
+  font: bold;
 }

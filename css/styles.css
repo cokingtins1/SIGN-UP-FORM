@@ -11,6 +11,7 @@ body {
   width: 100%;
 }
 
+
 .image-desc {
   color: white;
   width: 100%;
@@ -34,6 +35,12 @@ body {
   background-size: cover;
 }
 
+.logo {
+
+
+  background-image: url('../img/outdoors_logo.png');
+  
+}
 .right-side {
   display: flex;
   flex-direction: column;

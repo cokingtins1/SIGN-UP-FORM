@@ -1,70 +1,91 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+}
 
 .container {
-  font-family: 'Raleway', sans-serif;
-  
   display: flex;
-    width: 100vw;
-    height: 90vh;
-    flex-direction: row;
-    
-  }
-  .image{
-    display: flex;
-    /* margin: 1% 1% 1% 1%; */
-    background-size: cover; 
-  }
+  width: 100%;
+}
+
+.image-desc {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.image-desc a{
+  color: inherit;
   
-  .left-side{
-    display: flex;
-    width: 35%;
-  }
-  
-  .right-side{
-    width: 60%;
-    margin:0;
-    padding: 0;
-    margin-top: 1%;
+}
 
-  }
+.left-side {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1664361238220-9d6bfb7ff41a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
+    no-repeat center;
+  background-size: cover;
+}
 
-  .right-side > * {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.right-side {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+}
 
-  .top-header{
-    border-style: solid;
-    height: 40%;
-  }
-  
-  .middle-form{
-    border-style: solid;
-    height: 20%; 
-    margin-left: 0%;
-    padding-top: 3%;
-    background-color: rgba(0, 0, 0, 0.034);
+.right-side > * {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  }
-  
-  .footer{
-    border-style: solid;
-    height: 40%;
-  }
+.top-header {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  justify-content: center;
+  height: 40%;
+}
 
-  .form-label{
-    font-weight: 900;
-    display: block;
-    transition: all 0.5s;
-    /* transform: translateY(-3.0rem) */
-  }
-  
-  .form-input:focus {
-    transition: 0.2s;
-    outline: none;
-    border: 2px solid blue;
-  }
+.middle-form {
+  border-style: solid;
+  height: 20%;
+  margin-left: 0%;
+  padding-top: 3%;
+  background-color: rgba(0, 0, 0, 0.034);
+}
 
-  .form-input :placeholder-shown + .form-label{
-    opacity: 0;
-    visibility: hidden;
-  }
+.footer {
+  border-style: solid;
+  height: 40%;
+}
+
+.form-label {
+  font-weight: 900;
+  display: block;
+  transition: all 0.5s;
+  /* transform: translateY(-3.0rem) */
+}
+
+.form-input:focus {
+  transition: 0.2s;
+  outline: none;
+  border: 2px solid blue;
+}
+
+.form-input :placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: hidden;
+}

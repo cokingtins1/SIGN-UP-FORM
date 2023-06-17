@@ -1,6 +1,15 @@
-body {
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+
+.screen {
   font-family: 'Raleway', sans-serif;
   display: flex;
+  padding: 0;
+  margin: 0;
   width: 100vw;
   height: 100vh;
   flex-direction: row;
@@ -36,7 +45,6 @@ body {
 }
 
 .logo {
-
 
   background-image: url('../img/outdoors_logo.png');
   

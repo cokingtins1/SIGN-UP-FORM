@@ -1,9 +1,14 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: cursive;
   font-weight: normal;
 }
 
+:root {
+  --darkfade: linear-gradient(180deg, #ba2d0b 0%, #fe7f2d 37%, #ffbf46 100%);
+}
 
 .screen {
   font-family: 'Raleway', sans-serif;
@@ -45,21 +50,21 @@
 }
 
 .logo {
-
   background-image: url('../img/outdoors_logo.png');
-  
 }
+
 .right-side {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 60%;
   margin: 0;
-  padding: 0;
+  padding: 10px 10px 10px 25px;
   margin-top: 0;
+  background: var(--darkfade);
 }
 
-.right-side > * {
+.right-side>* {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -67,23 +72,60 @@
 .top-header {
   display: flex;
   flex-direction: column;
-  border-style: solid;
   justify-content: center;
+  gap: 50px;
   height: 40%;
+  font-size: 2em;
 }
 
 .middle-form {
-  border-style: solid;
-  height: 20%;
-  margin-left: 0%;
-  padding-top: 3%;
-  background-color: rgba(0, 0, 0, 0.034);
+  height: auto;
+
 }
 
-.footer {
-  border-style: solid;
-  height: 40%;
+.input-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 75px);
 }
+
+.input-grid h1 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: left;
+}
+
+button {
+  background-color: brown;
+  color: white;
+
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 40px 0 0;
+  padding: 10px 40px;
+}
+
+button:hover {
+  background-color: rgba(14, 6, 6, 0.89);
+}
+
+.already {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
+.footer {
+  height: 40%;
+
+}
+
 
 .form-label {
   font-weight: 900;
@@ -92,13 +134,18 @@
   /* transform: translateY(-3.0rem) */
 }
 
+form input {
+  width: 90%;
+  height: 40%;
+}
+
 .form-input:focus {
   transition: 0.2s;
   outline: none;
   border: 2px solid blue;
 }
 
-.form-input :placeholder-shown + .form-label {
+.form-input :placeholder-shown+.form-label {
   opacity: 0;
   visibility: hidden;
 }

@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <script type="module" src="script.js"></script>
+  <script defer type="module" src="script.js"></script>
 </head>
 
 <body class="screen">
+
   <div class="container">
     <div class="left-side">
       <div class="logo">Adventure</div>
@@ -38,14 +39,51 @@
       </div>
 
       <div class="middle-form">
-        Signup
-        <div class="first-name">
-          <label for="first-name" class="form-label">First Name</label>
-          <input type="text" class="form-input" id="first-name" placeholder="Frist Name" />
+
+        <form>
+
+          <div class="input-grid">
+            <h1 class="input-header">Get Started</h1>
+            <div class="first-name">
+              <label for="first-name" class="form-label">First Name</label>
+              <input type="text" class="form-input" id="first-name" placeholder="Frist Name" />
+            </div>
+            <div class="last-name">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" class="form-input" id="last-name" placeholder="Last Name" />
+            </div>
+            <div class="email">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-input" id="email" placeholder="email" />
+            </div>
+            <div class="phone">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-input" id="phone" placeholder="Phone Number"
+                pattern="[1-9]{3}-[0-9]{3}-[0-9]{3}" />
+            </div>
+            <div class="password">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-input" id="password" required placeholder="Password" />
+              <div id='error'></div>
+            </div>
+            <div class="confirm-password">
+              <label for="confirm-password" class="form-label">Confirm Password</label>
+              <input type="password" class="form-input" id="confirm-password" required placeholder="Confirm Password" />
+              <div id='error'></div>
+            </div>
+
+          </div>
+      </div>
+      <div class="footer">
+        <button type="submit" for="create-account" class="form-label">Creat Account</button>
+        <div class="already">
+          <p> Already have an account</p>
+          <a href="#">LOG IN</a>
         </div>
       </div>
-      <div class="footer">create account</div>
+      </form>
     </div>
+
   </div>
 
 </body>

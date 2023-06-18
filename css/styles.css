@@ -7,7 +7,7 @@
 }
 
 :root {
-  --darkfade: linear-gradient(180deg, #ba2d0b 0%, #fe7f2d 37%, #ffbf46 100%);
+  --darkfade: linear-gradient(to right, #5d4157, #a8caba);
 }
 
 .screen {
